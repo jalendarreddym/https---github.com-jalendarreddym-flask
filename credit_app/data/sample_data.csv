@@ -1,0 +1,6 @@
+application_id,applicant_name,age,income,loan_amount,employment_status,credit_history,location,application_date
+1,John Doe,30,50000,20000,Employed,Good,New York,2024-05-01
+2,Jane Smith,45,75000,30000,Self-Employed,Excellent,Los Angeles,2024-04-15
+3,Emily Johnson,35,40000,15000,Unemployed,Average,Chicago,2024-03-10
+4,Michael Brown,50,60000,25000,Employed,Poor,Houston,2024-06-01
+5,Sarah Davis,28,55000,22000,Employed,Good,Phoenix,2024-02-20

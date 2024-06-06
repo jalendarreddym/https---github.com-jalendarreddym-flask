@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Details</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>Application Details</h1>
+    <table>
+        <tr>
+            <td>Application ID</td>
+            <td>{{ application.application_id }}</td>
+        </tr>
+        <tr>
+            <td>Applicant Name</td>
+            <td>{{ application.applicant_name }}</td>
+        </tr>
+        <tr>
+            <td>Age</td>
+            <td>{{ application.age }}</td>
+        </tr>
+        <tr>
+            <td>Income</td>
+            <td>{{ application.income }}</td>
+        </tr>
+        <tr>
+            <td>Loan Amount</td>
+            <td>{{ application.loan_amount }}</td>
+        </tr>
+        <tr>
+            <td>Employment Status</td>
+            <td>{{ application.employment_status }}</td>
+        </tr>
+        <tr>
+            <td>Credit History</td>
+            <td>{{ application.credit_history }}</td>
+        </tr>
+        <tr>
+            <td>Location</td>
+            <td>{{ application.location }}</td>
+        </tr>
+        <tr>
+            <td>Application Date</td>
+            <td>{{ application.application_date }}</td>
+        </tr>
+        <tr>
+            <td>Predicted Credit Score</td>
+            <td>{{ prediction.credit_score }}</td>
+        </tr>
+        <tr>
+            <td>Comments</td>
+            <td>{{ prediction.comments }}</td>
+        </tr>
+    </table>
+</body>
+</html>

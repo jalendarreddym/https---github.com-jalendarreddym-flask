@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Application</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>Credit Application Data</h1>
+    <table>
+        <tr>
+            <th>Application ID</th>
+            <th>Applicant Name</th>
+            <th>Age</th>
+            <th>Income</th>
+            <th>Loan Amount</th>
+            <th>Employment Status</th>
+            <th>Credit History</th>
+            <th>Location</th>
+            <th>Application Date</th>
+            <th>View</th>
+        </tr>
+        {% for application in data %}
+        <tr>
+            <td>{{ application.application_id }}</td>
+            <td>{{ application.applicant_name }}</td>
+            <td>{{ application.age }}</td>
+            <td>{{ application.income }}</td>
+            <td>{{ application.loan_amount }}</td>
+            <td>{{ application.employment_status }}</td>
+            <td>{{ application.credit_history }}</td>
+            <td>{{ application.location }}</td>
+            <td>{{ application.application_date }}</td>
+            <td><a href="/view/{{ application.application_id }}">View</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <div id="chat-container">
+        <div id="chat-box"></div>
+        <input type="text" id="chat-input" placeholder="Type your message here...">
+        <button id="chat-send">Send</button>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/chatbot.js') }}"></script>
+</body>
+</html>
